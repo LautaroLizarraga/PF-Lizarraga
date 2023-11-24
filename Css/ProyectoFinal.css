@@ -7,61 +7,48 @@
 
 /*Header*/
 
-.flexHeader{
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    padding: 5px 10%;
+.logo{
+    width: 60px;
+    height: 60px;
 }
 
-.flexHeader .botonContacto button{
-    font-weight: 700;
-    color: #000;
-    padding: 10px 20px;
-    background-color: white;
-    border: none;
-    border-radius: 50px;
+.navbar-brand{
+    position: relative;
+    left: 12px;
+    top: 11px;
+}
+
+.logoInicio{
+    display: flex;
     cursor: pointer;
-    font-size: 16px;
+    text-decoration:none;
     transition: all 0.5s;
 }
 
-.flexHeader .linksNav li{
-    display: inline-block;
-    cursor: pointer;
-    padding: 0px 20px;
+.logoInicio:hover{
+    transform: scale(1.1);
 }
 
-.flexHeader .linksNav a{
-    font-size: 22px;
-    color: white;
-    text-decoration: none;
+.nav-link{
+    display: flex;
+    position: relative;
+    left: 22px ;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+.header{
     font-family: 'Kanit', sans-serif;
 }
 
-.flexHeader .linksNav{
-    list-style: none;
-}
-
-.flexHeader .logo{
-    cursor: pointer;
-}
-
-.flexHeader .logo img {
-    height: 70px;
-    width: auto;
-    transition: all 0.5s;
-}
-
-.flexHeader .logo img:hover{
-    transform: scale(1.2);
-}
-
-.flexHeader .botonContacto button:hover{
-    transform: scale(1.2);
+.navbar-nav{
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
 }
 
 /*Header*/
@@ -98,7 +85,7 @@
 } 
 
 
-.footer .RedesSociales{
+.footer .redesSociales{
     color: white;
     font-family: 'Kanit', sans-serif;
     font-size: 24px;
