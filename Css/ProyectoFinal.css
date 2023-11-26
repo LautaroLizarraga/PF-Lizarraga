@@ -57,38 +57,81 @@
 
 /*Footer general*/
 
-.footer {
-    display: flex;
-    background-color: black;
-    justify-content: space-between;
-    align-items: center;
-    height: 12vh;
+.footer{
     width: 100%;
-    padding: 5px 10%;
-    position: absolute;
-    bottom: 0;
+    background-color: #000;
 }
-
-.footer .redSocial {
-    width: 35px;
-    height: 40px;
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
-
-.footer .hexagono{
+.footer .grupo-1 .contenedor figure{
+    width: 100%;
+    height: 100%;
     display: flex;
-    width: 70px;
-    height: 65px;
-    background: white;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    align-items: center;
     justify-content: center;
-} 
+    align-items: center;
+}
+.footer .grupo-1 .contenedor figure img{
+    width: 100px;
+}
+.footer .grupo-1 .contenedor h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer .grupo-1 .contenedor p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.footer .grupo-1 .redSocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #ebebeb;
+    text-align: center;
+    transition: all 300ms ease;
+    gap: 5px;
+}
+
+.footer .grupo-1 .redSocial img{
+    display: inline-block;
+    text-decoration: none;
+    width: 15px;
+    height: 15px;
+    line-height: 45px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: all 300ms ease;
+}
 
 
-.footer .redesSociales{
+.footer .grupo-2{
+    background-color: #000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+.footer{
+    min-width: 250px;
+}
+
+.curriculum{
+    font-size: 15px;
     color: white;
-    font-family: 'Kanit', sans-serif;
-    font-size: 24px;
 }
 
 /*Footer general*/
