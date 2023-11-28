@@ -92,11 +92,11 @@
 .footer .grupo-1 .redSocial a{
     display: inline-block;
     text-decoration: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     line-height: 45px;
     color: #fff;
-    margin-right: 10px;
+    margin-right: 5px;
     background-color: #ebebeb;
     text-align: center;
     transition: all 300ms ease;
@@ -109,7 +109,7 @@
     width: 15px;
     height: 15px;
     line-height: 45px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
     transition: all 300ms ease;
 }
@@ -138,7 +138,7 @@
 
 /* Fondo */
 .body {
-    background-color: #ebebeb;
+    background-color: ebebeb;
 }
 /* Fondo */
 
@@ -158,6 +158,15 @@
 .mainIndex img{
     width: 340px;
     height: 390px;
+    position: absolute;
+}
+
+.mainIndex h1{
+    position: relative;
+    bottom: 32%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+    color: #000;
 }
 
 /*Main Index*/
@@ -166,38 +175,35 @@
 
 /* Main Nosotros */
 
-/* .mainFlexNosotros{
+.imagenesNosotros{
+    padding-top: 40px;
     display: flex;
-    align-items: stretch;
-    padding-top: 5%;
-    width: 100%;
-    height: 100%;
-} */
-
-.mainFlexNosotros .flexTexto{
-    margin-top: 40px;
-    display: flex;
-    position: absolute;
-    font-family: 'Kanit', sans-serif;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
-    gap: 35px;
-    padding-left: 18%;
-    padding-right: 5%;
+    gap: 30px;
 }
 
-.mainFlexNosotros .flexImagenesGalpon .imagenesGalpon{
+.imagenesNosotros img{
     width: 256px;
     height: 161px;
-    border: solid 3px black;
+    border: solid 2px black;
 }
 
-.mainFlexNosotros .flexImagenesGalpon{
-    display: flex;
-    flex-flow: column ;
-    gap: 60px;
-    padding: 30px;
+.tituloNosotros{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    padding-top: 20px ;
+}
+
+.copyNosotros{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 25px;
 }
 
 /* Main Nosotros */
