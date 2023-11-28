@@ -146,28 +146,39 @@
 
 /*Main Index*/
 
-.mainIndex{
+.flexIndex{
     display: flex;
-    height: 80vh;
-    width: 100%;
-    align-items: center;
     justify-content: center;
-    
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
 }
 
-.mainIndex img{
-    width: 340px;
-    height: 390px;
-    position: absolute;
-}
-
-.mainIndex h1{
-    position: relative;
-    bottom: 32%;
+.flexIndex .textoIndex{
     font-family: 'Kanit', sans-serif;
     font-size: 70px;
     color: #000;
 }
+
+.flexIndex .imagenIndex{
+    width: 340px;
+    height: 390p;
+}
+
+@media (max-width:700px){
+    .flexIndex .imagenIndex{
+        width: 240px;
+        height: 260px;
+    }
+
+    .flexIndex .textoIndex{
+        font-family: 'Kanit', sans-serif;
+        font-size: 50px;
+        color: #000;
+    }
+}
+
 
 /*Main Index*/
 
