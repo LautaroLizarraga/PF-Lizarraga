@@ -14,7 +14,6 @@
 
 .navbar-brand{
     position: relative;
-    left: 12px;
     top: 11px;
 }
 
@@ -32,7 +31,7 @@
 .nav-link{
     display: flex;
     position: relative;
-    left: 22px ;
+    
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -129,16 +128,23 @@
     min-width: 250px;
 }
 
-.curriculum{
-    font-size: 15px;
+.cajaCurriculum {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.cajaCurriculum .curriculum{
+    font-size: 16px;
     color: white;
+    text-align: center;
 }
 
 /*Footer general*/
 
 /* Fondo */
 .body {
-    background-color: rgb(215, 212, 212) ;
+    background-color: rgb(255, 255, 255) ;
 }
 /* Fondo */
 
@@ -186,6 +192,10 @@
 
 /* Main Nosotros */
 
+.contenedorNosotros{
+    animation: aparecer 1s linear 1;
+}
+
 .imagenesNosotros{
     padding-top: 40px;
     display: flex;
@@ -218,7 +228,7 @@
     color: black;
     margin: 20px 0;
     padding: 20px;
-    font-size: 25px;
+    font-size: 2vh;
 }
 
 /* Main Nosotros */
@@ -245,12 +255,13 @@
     height: 300px;
     line-height: 120px;
     margin: 20px;
+    animation: aparecerIzquierda 2s; 
 }
+
 
 .flexServicios .imagenesServicios{
     width: 32%;
     height: 100%;
-
 }
 
 .flexServicios .textoServicios{
@@ -288,6 +299,7 @@
     .flexServicios .tituloServicios{
         width: 100%;
         border-bottom: #000 2px solid;
+        animation: aparecerizquierda 0.5s;
     }
     .flexServicios .textoServicios{
         border-top: #000 0px solid;
@@ -297,10 +309,19 @@
         left: 0;
         bottom: 3%;
         padding-bottom: 10%;
+        animation: aparecerizquierda 0.5s;
     }
 }
 
-    
+.flexServicios .serviciosTituloPrincipal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 60px 60px;
+    border-bottom: #000 solid 3px;
+    font-family: 'Kanit', sans-serif;
+    animation: aparecer 1s linear 1;
+}
 
 
 
@@ -309,107 +330,97 @@
 
 /* Main catalogo */
 
-.imagenesBombas{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-}
+    .sectionCatalogo{
+        width: 100%;
+        height: auto;
+    }
 
-.titulosBombas{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    padding-right: 13px;
-    font-family: 'Kanit', sans-serif;
-}
+    .contenedorCatalogo{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 10%;
+    }
 
-.imagenesBombas img{
-    width: 220px;
-    height: 180px;
-}
+    .col img{
+        margin: 40px;
+        width: 40vh;
+        height: 40vh;
+        display: block;
+    }
 
-.textoBienvenidaCatalogo{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    font-family: 'Kanit', sans-serif;
-}
+    .textoCol{
+        font-size: 2vh;
+        font: bold;
+        font-family: 'Kanit', sans-serif;
+        display: inline;
+        width: auto;
+        border-bottom: #000 solid 2px;
+    }
 
-.textoBienvenidaCatalogo h1{
-    font-weight: bold;
-}
+    .col a{
+        margin-top: 20px;
+        display: block;
+        font-size: 2vh;
+    }
 
-.textoBienvenidaCatalogo p{
-    padding-top: 30px;
-}
+    .textoBienvenidaCatalogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Kanit', sans-serif;
+    }
 
-.catalogo{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    font-family: 'Kanit', sans-serif;
-}
+    #catalogoParrafo{
+        display: block;
+        font-size: 2vh;
+        width: 70%;
+        height: auto;
+        text-align: center;
+    }
 
-.catalogoGeneral{
-    display: flex;
-    flex-flow: column;
-    align-content: space-around;
-    padding-top: 80px;
-    gap: 30px;
-}
+    #catalogoTitulo{
+        font-size: 3vh;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-bottom: solid black 2px;
+        padding-bottom: 5px;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animacionCatalogo{
+        animation: aparecer 1.5s linear;
+    }
 
 /* Main catalogo */
 
 
 /* Main Contactanos */
 
-.contactos{
-    display: flex;
-    flex-direction: column;
-    padding-left: 40px;
-    margin-top: 80px;
-    align-items:center ;
-    width: 600px;
-    height: 600px;
-    gap: 10px;
-    font-family: 'Kanit', sans-serif;
-}
-
 .imagenesContacto{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
 }
 
-.whatsapp{
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-}
 
-.mail{
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-}
 
 .iframe{
     display: flex;
-    justify-content: baseline;
-    padding-left: 30px;
-}
-
-.textoContacto{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.textoContacto h1{
-    text-align: center;
+    flex-direction: row;
+    margin: 40px;
+    gap: 1%;
 }
 
 .formulario{
@@ -418,9 +429,7 @@
     padding: 30px;
     border-radius: 4px;
     font-family: 'Kanit', sans-serif;
-     position: absolute;
-     right: 250px;
-     top: 200px;
+    display: none;
 }
 
 .formulario h4{
@@ -458,3 +467,32 @@
 }
 
 /* Main contactanos */
+
+/* Animaciones */
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0,5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerIzquierda {
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Animaciones */

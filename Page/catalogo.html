@@ -21,7 +21,7 @@
                     <img class="logo" src="../img/Logo empresa/logo sermat.png" alt="logo">
                     <h2 class="navbar-brand" style="color: white; font-size: 22px;" >Sermat</h2>
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button style="background-color: rgb(112, 112, 112);" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -33,6 +33,9 @@
                         <a class="nav-link" style="color: white;" href="./servicios.html">Servicios</a>
                     </li>
                     <li>
+                        <a class="nav-link" style="color: white;" href="./catalogo.html">Catalogo</a>
+                    </li>
+                    <li>
                         <a class="nav-link" style="color: white;" href="./contacto.html" >Contactános</a>
                     </li>
                 </lu>
@@ -42,68 +45,66 @@
     </header>
 
     <main>
-       
-        <!-- Texto -->
-
+        <section class="animacionCatalogo">
         <div class="textoBienvenidaCatalogo">
-            <h1 id="CatalogoTitulo">Nuestros productos</h1>
-            <p id="CatalogoParrafo">Explora nuestros catálogos detallados y cuidadosamente elaborados, diseñados para ofrecerte una visión integral de nuestra gama de productos y soluciones. Cada catálogo representa el resultado de años de dedicación, precisión y compromiso con la excelencia.</p>
+            <h1 id="catalogoTitulo">Nuestros productos</h1>
+            <p id="catalogoParrafo">Explora nuestros catálogos detallados y cuidadosamente elaborados, diseñados para ofrecerte una visión integral de nuestra gama de productos y soluciones. Cada catálogo representa el resultado de años de dedicación, precisión y compromiso con la excelencia.</p>
         </div>
-
-        <!-- Texto -->
-
-    <div class="catalogoGeneral">
-
-        <!-- Imagenes -->
-        <div class="imagenesBombas">
-            <img src="../img/Catalogo/Bomba 1.png" alt="Bomba hidraulica">
-            <img src="../img/Catalogo/Bomba 3.png" alt="Bomba gasoil">
-            <img src="../img/Catalogo/Bomba 2.png" alt="Bomba licuado">
-        </div>
-        <!-- Imagenes -->
-
-        <!-- Texto -->
-        <div class="titulosBombas">
-            <h2 id="HidraulicaTexto">Bombas hidraulicas</h2>
-            <h2 id="LicuadoTexto">Bombas de gas licuado</h2>
-            <h2 id="GasoilTexto">Bombas de gasoil</h2>
-        </div>
-
-        <div class="catalogo">
-            <a href="#">Descargar catalogo</a>
-            <a href="#">Descargar catalogo</a>
-            <a href="#">Descargar catalogo</a>
-        </div>
-    
-        <!-- Texto -->
-
-    </div>
-
+        
+        <section class="sectionCatalogo">
+            <div class="container text-center">
+                <div class="contenedorCatalogo">
+                  <div class="col">
+                    <img src="../img/Catalogo/Bomba 1.png" alt="Bomba hidraulica">
+                    <p class="textoCol">Bombas hidraulicas</p>
+                    <a href="">Descargar catalogo</a>
+                  </div>
+                  <div class="col">
+                    <img src="../img/Catalogo/Bomba 2.png" alt="Bomba gasoil">
+                    <p class="textoCol">Bombas de gasoil</p>
+                    <a href="">Descargar catalogo</a>
+                  </div>
+                  <div class="col">
+                    <img src="../img/Catalogo/Bomba 3.png" alt="Bomba licuado">
+                    <p id="textoColExcepcion">Bombas de licuado</p>
+                    <a href="">Descargar catalogo</a>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer class="footer">
         <div class="grupo-1">
             <div class="contenedor">
                 <figure>
-                    <a href="#">
                         <img src="../img/Logo empresa/logo sermat.png" alt="Logo">
-                    </a>
                 </figure>
             </div>
             <div class="contenedor">
-                <h2>MANDANOS TU CURRICULUM</h2>
-                <a class="curriculum" href="#">Hace click acá</a>
+                <div class="cajaCurriculum">
+                    <h2 class="curriculum">SECCIONES</h2>
+                    <a class="curriculum" href="#">Inicio</a>
+                    <a class="curriculum" href="#">Nosotros</a>
+                    <a class="curriculum" href="#">Servicios</a>
+                    <a class="curriculum" href="#">Catalogo</a>
+                    <a class="curriculum" href="#">Contacto</a>
+                </div>
             </div>
             <div class="contenedor">
                 <div class="redSocial">
-                    <a href="#" class="facebook">
-                        <img src="../img/Redes sociales/facebook.svg" alt="">
+                    <a href="#">
+                        <img src="../img/Redes sociales/facebook.svg" alt="Facebook">
                     </a>
-                    <a href="#" class="instagram">
-                        <img src="../img/Redes sociales/instagram.svg" alt="">
+                    <a href="#">
+                        <img src="../img/Redes sociales/instagram.svg" alt="Instagram">
                     </a>
-                    <a href="#" class="youtube">
-                        <img src="../img/Redes sociales/youtube.png" alt="">
+                    <a href="#">
+                        <img src="../img/Redes sociales/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="#">
+                        <img src="../img/Redes sociales/Twitter.webp" alt="Twitter">
                     </a>
                 </div>
             </div>
