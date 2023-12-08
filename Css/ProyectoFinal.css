@@ -408,63 +408,240 @@
 
 /* Main Contactanos */
 
-.imagenesContacto{
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
+@media (min-width:700px){
+    .imagenesContacto{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        position: relative;
+    }
+    
+    .flexIzquierdaContacto{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .flexIzquierdaContacto h1{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 40px;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .boxWhatsapp{
+        margin: 40px;
+        display: flex;
+        gap: 3%;
+    }
+    
+    .boxWhatsapp h2{
+        font-size: 30px;
+        font-family: 'Kanit', sans-serif;
+        margin-top: 7px;
+    }
+
+    .boxEmail{
+        display: flex;
+        margin: 40px;
+        gap: 3%;
+        font-size: 30px;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .iframe{
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+        gap: 3%;
+    }
+    
+    .tamañoIframe{
+        width: 100%;
+        height: 240px;
+    }
+
+    .posicion{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        margin: 20px;
+    }
+
+    .formulario{
+        width: 400px;
+        background-color: #24303c;
+        padding: 30px;
+        border-radius: 4px;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .formulario h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .formulario .llenar{
+        width: 100%;
+        background-color:white;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .formulario .consulta{
+        width: 100%;
+        background-color:white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .formulario .boton{
+        width: 25%;
+        margin-left: 60px;
+        border: none;
+        background-color: #1f53c5;
+        color: white;
+        font-size: 14px;
+        font-family: 'Kanit', sans-serif;
+        cursor: pointer;
+    }
+
+    .boxUbicacion{
+        display: none;
+    }
 }
 
+@media (max-width:700px){
+    .imagenesContacto{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        position: relative;
+    }
+    
+    .flexIzquierdaContacto{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .flexIzquierdaContacto h1{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 40px;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .boxWhatsapp{
+        display: flex;
+        gap: 10%;
+    }
+    
+    .boxWhatsapp h2{
+        font-size: 16px;
+        font-family: 'Kanit', sans-serif;
+        margin-top: 9%;
+    }
 
+    .boxEmail{
+        display: flex;
+        gap: 10%;
+    }
 
-.iframe{
-    display: flex;
-    flex-direction: row;
-    margin: 40px;
-    gap: 1%;
+    .boxEmail h2{
+        font-size: 16px;
+        font-family: 'Kanit', sans-serif;
+        margin-top: 10%;
+    }
+    
+    .boxUbicacion{
+        display: flex;
+        gap: 15%;
+        margin-bottom: 10px;
+    }
+
+    .boxUbicacion h2{
+        font-size: 12px;
+        font-family: 'Kanit', sans-serif;
+        margin-top: 9%;
+    }
+
+    .iframe{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        gap: 3%;
+        display: none;
+    }
+
+    .posicion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        margin: 20px;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #24303c;
+        border-radius: 4px;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .formulario h4{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+        padding-top: 10px ;
+        color: white;
+    }
+    
+    .formulario .llenar{
+        width: 70%;
+        background-color:white;
+        border-radius: 4px;
+        border: 1px solid black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .formulario .consulta{
+        width: 90%;
+        background-color:white;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    
+    .formulario .boton{
+        width: 70%;
+        margin-bottom: 20px;
+        border: none;
+        background-color: #1f53c5;
+        color: white;
+        font-size: 14px;
+        font-family: 'Kanit', sans-serif;
+        cursor: pointer;
+    }
+
+    .botonesFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
-.formulario{
-    width: 400px;
-    background-color: #24303c;
-    padding: 30px;
-    border-radius: 4px;
-    font-family: 'Kanit', sans-serif;
-    display: none;
-}
-
-.formulario h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.formulario .llenar{
-    width: 100%;
-    background-color:white;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid black;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.formulario .consulta{
-    width: 100%;
-    background-color:white;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.formulario .boton{
-    width: 25%;
-    margin-left: 60px;
-    border: none;
-    background-color: #1f53c5;
-    color: white;
-    font-size: 14px;
-    font-family: 'Kanit', sans-serif;
-    cursor: pointer;
-}
 
 /* Main contactanos */
 
