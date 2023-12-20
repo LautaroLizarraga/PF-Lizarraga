@@ -1,3 +1,619 @@
+@charset "UTF-8";
+/* Variables */
+/* Variables */
+/* Animaciones */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@keyframes aparecerError {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0, 5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0, 5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecerDerecha {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animaciones */
+/* Header */
+@media (max-width: 700px) {
+  .nav-link {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav-link :hover {
+    transform: scale(0.9);
+    display: block;
+  }
+}
+/* Header */
+/* Index */
+@media (max-width: 700px) {
+  .flexIndex .imagenIndex {
+    width: 240px;
+    height: 340px;
+  }
+  .flexIndex .textoIndex {
+    font-family: "Kanit", sans-serif;
+    font-size: 35px;
+    color: black;
+  }
+}
+/* Index */
+/* Pagina error */
+@media (max-width: 700px) {
+  .contenedorError {
+    width: 100%;
+  }
+  .contenedorError h1 {
+    text-align: center;
+    font-size: 4vh;
+  }
+  .contenedorError img {
+    height: auto;
+    width: 50%;
+  }
+}
+/* Pagina error */
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+/* Header */
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand {
+  position: relative;
+  top: 12px;
+}
+
+.logoInicio {
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.logoInicio:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  font-family: "Kanit", sans-serif;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 30px;
+  font-size: 22px;
+}
+
+/* Header */
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: black;
+  min-width: 250px;
+}
+.footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .contenedor figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contenedor img {
+  width: 100px;
+}
+.footer .contenedor h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .contenedor p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.footer .redSocial a {
+  display: inline-block;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 5px;
+  background-color: #ebebeb;
+  text-align: center;
+  transition: all 300ms ease;
+  gap: 5px;
+}
+.footer .redSocial img {
+  display: inline-block;
+  text-decoration: none;
+  width: 15px;
+  height: 15px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footer .grupo-2 {
+  background-color: black;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.footer .grupo-2 small {
+  font-size: 15px;
+}
+.footer .cajaCurriculum {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer .cajaCurriculum .curriculum {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+/* Footer */
+/* Fondo */
+.body {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Fondo */
+/* Index */
+.flexIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+}
+.flexIndex .textoIndex {
+  font-family: "Kanit", sans-serif;
+  font-size: 8vh;
+  color: black;
+}
+.flexIndex .imagenIndex {
+  width: 340px;
+  height: auto;
+}
+
+/* Index */
+/* Nosotros */
+.contenedorNosotros {
+  animation: aparecer 1s linear 1;
+}
+.contenedorNosotros .imagenesNosotros {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.contenedorNosotros .imagenesNosotros img {
+  width: 256px;
+  height: 161px;
+  border: solid 2px black;
+}
+.contenedorNosotros .tituloNosotros {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: black 3px solid;
+}
+.contenedorNosotros .copyNosotros {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  color: black;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 2vh;
+}
+
+/* Nosotros */
+/* Servicios */
+.flexServicios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flexServicios .cajaServicios {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Kanit", sans-serif;
+  color: black;
+  width: 90%;
+  height: 300px;
+  line-height: 120px;
+  margin: 20px;
+  animation: aparecerDerecha 2s;
+}
+.flexServicios .imagenesServicios {
+  width: 32%;
+  height: 100%;
+}
+.flexServicios .textoServicios {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  position: relative;
+  left: 32%;
+  bottom: 80%;
+  border-top: black 3px solid;
+  width: 68%;
+  height: 80%;
+  font-size: 2vh;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3%;
+  margin-left: 20px;
+}
+.flexServicios .tituloServicios {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 68%;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.flexServicios .serviciosTituloPrincipal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 60px 60px;
+  border-bottom: #000 solid 3px;
+  font-family: "Kanit", sans-serif;
+  animation: aparecer 1s linear 1;
+}
+
+/* Servicios */
+/* Catalogo */
+.animacionCatalogo {
+  animation: aparecer 1.5s linear;
+}
+
+.textoBienvenidaCatalogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif;
+}
+.textoBienvenidaCatalogo #catalogoTitulo {
+  font-size: 3vh;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-bottom: solid black 2px;
+  padding-bottom: 5px;
+}
+.textoBienvenidaCatalogo #catalogoParrafo {
+  display: block;
+  font-size: 2vh;
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+
+.sectionCatalogo {
+  width: 100%;
+  height: auto;
+}
+.sectionCatalogo .contenedorCatalogo {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10%;
+}
+.sectionCatalogo .contenedorCatalogo .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionCatalogo .contenedorCatalogo .col a {
+  margin-top: 20px;
+  display: block;
+  font-size: 2vh;
+}
+.sectionCatalogo .contenedorCatalogo .col img {
+  margin: 40px;
+  width: 40vh;
+  height: 40vh;
+  display: block;
+}
+.sectionCatalogo .contenedorCatalogo .col .textoCol {
+  font-size: 2vh;
+  font: bold;
+  font-family: "Kanit", sans-serif;
+  display: inline;
+  width: auto;
+  border-bottom: black solid 2px;
+}
+
+/* Catalogo */
+/* Desktop */
+@media (min-width: 700px) {
+  .imagenesContacto {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .flexIzquierdaContacto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .flexIzquierdaContacto h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+  }
+  .flexIzquierdaContacto .boxWhatsapp {
+    margin: 40px;
+    display: flex;
+    gap: 3%;
+  }
+  .flexIzquierdaContacto .boxWhatsapp a {
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+  }
+  .flexIzquierdaContacto .boxEmail {
+    display: flex;
+    margin: 40px;
+    gap: 3%;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+  }
+  .flexIzquierdaContacto .iframe {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    gap: 3%;
+  }
+  .flexIzquierdaContacto .iframe .tamañoIframe {
+    width: 100%;
+    height: 240px;
+  }
+  .flexIzquierdaContacto .boxUbicacion {
+    display: none;
+  }
+  .posicion {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin: 20px;
+  }
+  .animacionContacto {
+    animation: aparecer 1s linear;
+  }
+  .formulario {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: "Kanit", sans-serif;
+  }
+  .formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .formulario .llenar {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .formulario .consulta {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .formulario .boton {
+    width: 25%;
+    margin-left: 60px;
+    border: none;
+    background-color: #1f53c5;
+    color: white;
+    font-size: 14px;
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+  }
+}
+/* Desktop */
+/* Mobile */
+@media (max-width: 700px) {
+  .flexIzquierdaContacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexIzquierdaContacto .imagenesContacto {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .flexIzquierdaContacto h1 {
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+  }
+  .flexIzquierdaContacto .boxWhatsapp {
+    display: flex;
+    gap: 13px;
+  }
+  .flexIzquierdaContacto .boxWhatsapp a {
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    margin-top: 11%;
+    text-decoration: none;
+  }
+  .flexIzquierdaContacto .boxEmail {
+    display: flex;
+    gap: 13px;
+  }
+  .flexIzquierdaContacto .boxEmail a {
+    display: flex;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    margin-top: 5%;
+    text-decoration: none;
+  }
+  .flexIzquierdaContacto .boxUbicacion {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5%;
+  }
+  .flexIzquierdaContacto .boxUbicacion a {
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    margin-top: 5%;
+    text-decoration: none;
+  }
+  .flexIzquierdaContacto .iframe {
+    display: none;
+  }
+  .posicion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin: 15px;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24303c;
+    border-radius: 4px;
+    font-family: "Kanit", sans-serif;
+  }
+  .formulario h4 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: white;
+  }
+  .formulario .llenar {
+    width: 70%;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .formulario .consulta {
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  .formulario .boton {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+    background-color: #1f53c5;
+    color: white;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+  }
+  .formulario .botonesFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+/* Mobile */
+/*  Catalogo */
+/* Pagina de error */
 .contenedorError {
   display: flex;
   flex-direction: column;
@@ -5,6 +621,7 @@
 }
 .contenedorError h1 {
   font-size: 5vh;
+  color: black;
   font-family: "Kanit", sans-serif;
   margin: 20px;
 }
@@ -24,27 +641,4 @@
   animation: aparecerError 2s linear;
 }
 
-@media (max-width: 700px) {
-  .contenedorError {
-    width: 100%;
-  }
-  .contenedorError h1 {
-    text-align: center;
-    font-size: 4vh;
-  }
-  .contenedorError img {
-    height: auto;
-    width: 50%;
-  }
-}
-@keyframes aparecerError {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0, 5;
-  }
-  100% {
-    opacity: 1;
-  }
-}/*# sourceMappingURL=style.css.map */
+/* Pagina de error *//*# sourceMappingURL=style.css.map */

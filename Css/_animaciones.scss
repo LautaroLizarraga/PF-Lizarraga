@@ -1,0 +1,42 @@
+/* Animaciones */
+
+@keyframes aparecerError{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0,5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0,5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerDerecha {
+    0%{
+        opacity: 0;
+        transform: translate(-20px);
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Animaciones */
